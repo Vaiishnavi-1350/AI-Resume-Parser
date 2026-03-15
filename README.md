@@ -51,6 +51,48 @@ Evaluation Metric :
 - Silhouette Score (Clustering Quality)
 - Cosine Similarity (Semantic Matching)
 
+
+**System Architecture**
+
+The following architecture diagram illustrates the workflow of the AI-based Resume Parser system.
+Workflow Explanation
+1. Resume Dataset Input
+The system begins by loading a resume dataset containing candidate resumes and their respective categories.
+2. Text Preprocessing
+Resume text is cleaned using Natural Language Processing techniques such as:
+- Lowercasing
+- Removing punctuation and numbers
+- Stopword removal
+- Lemmatization using NLTK
+3. Feature Representation (BERT Embeddings)
+Cleaned resumes are converted into semantic embeddings using a Sentence-BERT model.
+This allows the system to understand the contextual meaning of words rather than simple keyword matching.
+4. Skill Extraction Module
+Important technical skills such as Python, Machine Learning, NLP, SQL, and Deep Learning are extracted from resumes to generate a skill score.
+5. Similarity Matching
+The job description is converted into an embedding and compared with resume embeddings using cosine similarity to measure relevance.
+
+6. Weighted Scoring System
+The final ranking score is calculated by combining:
+- Semantic similarity score
+- Skill match score
+7. Candidate Ranking
+Resumes are ranked from 0 to 10 based on their suitability for the job role.
+
+**Architecture Components** 
+
+- Dataset Loader
+
+- Text Preprocessing Engine
+
+- NLP Embedding Model
+
+- Skill Extraction Module
+
+- Similarity Matching Engine
+
+- Candidate Ranking System
+
 How to Run
 
 1. Open Google Colab
