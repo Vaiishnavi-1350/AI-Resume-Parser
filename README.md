@@ -1,5 +1,5 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/Vaiishnavi-1350/AI-Resume-Parser/blob/main/resume_parser.ipynb)
+(https://colab.research.google.com/github/Vaiishnavi-1350/AI-Resume-Parser/blob/main/Resume%20Parser%20AI%20Project.ipynb)
 
 # AI-Powered Resume Parser & Ranking System
 (BERT-based Resume Ranking System)
